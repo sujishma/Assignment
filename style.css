@@ -1,0 +1,31 @@
+/*navbar styling*/
+nav { 
+    background-color: grey;
+    margin-top: 10px; /*sets the margin area on the top of an element*/
+}
+
+nav ul {
+    overflow: auto; /* Enable scrolling if the sidenav has too much content,adds vertical scroll bar*/
+    margin: 5px;
+}
+
+nav li {
+    float: left;
+    list-style: none; /* To remove bullet */
+    margin: 0.5%;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block; /*makes the whole link area clickable */
+    color: white;
+    width: 100%;
+
+   
+}
+li a:hover {
+    background-color: black;
+}
