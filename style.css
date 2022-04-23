@@ -1,59 +1,88 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*padding and border are included in the width and height*/
+    list-style: none;   /* To remove bullet */
     text-decoration: none;
+    box-sizing: border-box; /*padding and border are included in the width and height*/
+}
+body{
+    background-color: white;
 }
 
 /*nav styling*/
 nav {
-    background-color: grey;
-    margin-top: 10px; /*sets the margin area on the top of an element*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 185, 176);
+    height: 40px;
 }
-.logo{
+/* logo */
+.logo a{
     color: white;
     font-size: 30px;
-
+    font-weight: bold;
+    margin: 10px;
+    left: 0px;
+}
+.logo a span{
+    color: #fb839e;
 }
 @media screen and (max-width: 900px){
     .logo{
-        background-color: black;
-    }
-
-    
+        background-color: blue;
+    } 
 }
-
+/* navbar */
 nav ul {
+    display: flex;
     float: right;
     overflow: auto; /*better control of the layout*/
     margin-right: 20px;
 }
-
 nav li {
     display: inline-block;
-    list-style: none; /* To remove bullet */
-    margin: 0.5%;
-    padding-right: 30px;
-    padding-left: 30px;
-    font-size: 30px;
+    margin-left: 30px;
 }
-
 nav ul li a {
     text-decoration: none;
     display: block; /*makes the whole link area clickable */
     color: white;
     width: 100%;
+    font-size: 23px;
+}
+.navMenu li{
+    border: 2px solid transparent;
+    border-bottom: 2px solid #fff;
+    margin-right: 0px;
+    padding-right: 30px;
+    transition: border 0.8s ease;
+}
+.navMenu li:hover{
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid transparent;
+}
 
-   
-}
-li a:hover {
-    background-color: black;
-}
 /*home section styling*/
-.home{
+.home-content{
     display: flex;
-    background: url("image.jpeg") no-repeat right;
-    height: 100vh;
-    color:black;
-    min-height: 500px;
 }
+.home{
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    font-size: 35px;
+    height: 700px;
+}
+.image{
+    width: 30%;
+    height: 20%;
+    border-radius: 60%;
+    justify-content: center;
+    display: block;
+    margin-left: 300px;
+}
+
+
+
