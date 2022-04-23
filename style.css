@@ -1,16 +1,36 @@
-/*navbar styling*/
-nav { 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*padding and border are included in the width and height*/
+    text-decoration: none;
+}
+
+/*nav styling*/
+nav {
     background-color: grey;
     margin-top: 10px; /*sets the margin area on the top of an element*/
 }
+.logo{
+    color: white;
+    font-size: 30px;
+
+}
+@media screen and (max-width: 900px){
+    .logo{
+        background-color: black;
+    }
+
+    
+}
 
 nav ul {
-    overflow: auto; /* Enable scrolling if the sidenav has too much content,adds vertical scroll bar*/
-    margin: 5px;
+    float: right;
+    overflow: auto; /*better control of the layout*/
+    margin-right: 20px;
 }
 
 nav li {
-    float: left;
+    display: inline-block;
     list-style: none; /* To remove bullet */
     margin: 0.5%;
     padding-right: 30px;
@@ -28,4 +48,12 @@ nav ul li a {
 }
 li a:hover {
     background-color: black;
+}
+/*home section styling*/
+.home{
+    display: flex;
+    background: url("image.jpeg") no-repeat right;
+    height: 100vh;
+    color:black;
+    min-height: 500px;
 }
