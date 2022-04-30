@@ -1,11 +1,13 @@
-*{
+/* css for overall page */
+* {
     margin: 0;
     padding: 0;
-    list-style: none;   /* To remove bullet */
+    list-style: none; /* To remove bullet */
     text-decoration: none;
     box-sizing: border-box; /*padding and border are included in the width and height*/
 }
-body{
+
+body {
     background-color: white;
 }
 
@@ -16,22 +18,26 @@ nav {
     background-color: rgb(45, 185, 176);
     height: 40px;
 }
+
 /* logo */
-.logo a{
+.logo a {
     color: white;
     font-size: 30px;
     font-weight: bold;
     margin: 10px;
     left: 0px;
 }
-.logo a span{
+
+.logo a span {
     color: #fb839e;
 }
-@media screen and (max-width: 900px){
-    .logo{
+
+@media screen and (max-width: 900px) {
+    .logo {
         background-color: blue;
-    } 
+    }
 }
+
 /* navbar */
 nav ul {
     display: flex;
@@ -39,25 +45,30 @@ nav ul {
     overflow: auto; /*better control of the layout*/
     margin-right: 20px;
 }
+
 nav li {
     display: inline-block;
     margin-left: 30px;
 }
+
 nav ul li a {
     text-decoration: none;
-    display: block; /*makes the whole link area clickable */
+    display: block;
+    /*makes the whole link area clickable */
     color: white;
     width: 100%;
     font-size: 23px;
 }
-.navMenu li{
+
+.navMenu li {
     border: 2px solid transparent;
     border-bottom: 2px solid #fff;
     margin-right: 0px;
     padding-right: 30px;
     transition: border 0.8s ease;
 }
-.navMenu li:hover{
+
+.navMenu li:hover {
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -65,56 +76,71 @@ nav ul li a {
 }
 
 /*home section styling*/
-.home-content{
-    display: flex;
+* 
+{
+  box-sizing: border-box;
 }
-.home{
-    color: black;
+.grid-container{
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.grid-container .grid-item2{
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+.home {
     display: inline-flex;
     align-items: center;
-    font-size: 35px;
     height: 700px;
 }
-.image{
-    width: 30%;
-    height: 20%;
-    border-radius: 60%;
-    justify-content: center;
-    display: block;
-    margin-left: 300px;
+.info{
+    color: black;
+    font-size: 45px;
 }
+
+.image {
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 /* contact */
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.heading{
+    font-size: 30px;
+    padding-left: 10px;
 }
 
-input[type=send] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=send]:hover {
-  background-color: #45a049;
-}
-
-form{
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.grid-container2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
 
 
+.iNpuT {
+    box-sizing: border-box;
+    box-shadow: black;
+    font-size: 30px;
+    height: 100%;
+    width: 60%;
+    border-radius: fit-content;
+}
 
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, .input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+.mAp {
+    height: 450;
+    width: 600;
+    border: 10px;
+}
+footer{
+    background-color: #fb839e;
+}
