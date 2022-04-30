@@ -5,33 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Contact</title>
 </head>
 
 <body>
-    <form>
-        <div class="iNpuT">
-        
-            <input type="text" name="full Name" placeholder="Your Full Name">
-            
-    
-            <input type="text" name="email" placeholder="Your Email">
-            
-        
-            <input type="text" name="subject" placeholder="Subject">
-           
-        
-            <textarea rows="6" cols="65" name="messAge" placeholder="Your Message Here"></textarea>
-            
-       
-            <button type="Send">
-                Send
-            </button>
-        </div>
-    </form>
+    <!-- navbar -->
+    <nav>
+        <ul class="navMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="sitereport.html">SITE REPORT</a></li>
 
-  
+        </ul>
+    </nav>
+    <section class="FormContainer">
+        <div class="top">
+           <div class="heading">ContacT</div>
+        </div>
+        <!-- form -->
+        <div class="grid-container2">
+            <div class="grid-item3">
+                <form name="form" action="contact.html" id="form">
+                    <div class="iNpuT">
+                        <input type="text" name="full Name" placeholder="Your Full  Name">
+                        <br>
+                        <input type="text" name="email" placeholder="Your Valid  Email">
+                        <br>
+                        <input type="text" name="subject" placeholder="Subject"></textarea>
+                        <br>
+                        <textarea rows="6" cols="55" name="messAge" placeholder="Enter Your Message Here"></textarea>
+                        <br>
+                        <input type="Send" value="Send">
+                        
+                        
+                    </div>
+                </form>
+            </div>
+
+            <div class="grid-item4">
+                <!-- Creating map -->
+                <div class="mAp">
+                    <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.914621031572!2d85.38115771498813!3d27.719922282786783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bbf46821009%3A0xb8e1a147cb4dc56c!2sNaaya%20Aayam%20Multi-Disciplinary%20Institute!5e0!3m2!1sen!2snp!4v1651313489845!5m2!1sen!2snp"
+                      ></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+
 
 </body>
 
