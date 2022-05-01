@@ -20,7 +20,7 @@ nav {
 }
 
 /* logo */
-.logo a {
+.logO a {
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -28,12 +28,12 @@ nav {
     left: 0px;
 }
 
-.logo a span {
+.logO a span {
     color: #fb839e;
 }
 
 @media screen and (max-width: 900px) {
-    .logo {
+    .logO {
         background-color: blue;
     }
 }
@@ -76,10 +76,7 @@ nav ul li a {
 }
 
 /*home section styling*/
-* 
-{
-  box-sizing: border-box;
-}
+
 .grid-container{
     display: grid;
     grid-gap: 100px;
@@ -102,11 +99,15 @@ nav ul li a {
 
 .image {
     width: 80%;
-    height: 100%;
+    height: 55vh;
     border-radius: 50%;
 }
 
 /* contact */
+.FormContainer{
+    background-color: #e6dfdf;
+
+}
 .heading{
     font-size: 30px;
     padding-left: 10px;
@@ -120,17 +121,27 @@ nav ul li a {
 }
 
 
-.iNpuT {
+.iNpuT input, .iNpuT textarea{
+    margin: 5px;
     box-sizing: border-box;
     box-shadow: black;
     font-size: 30px;
-    height: 100%;
-    width: 60%;
+    height: 50%;
+    width: 50%;
     border-radius: fit-content;
 }
+.iNpuT .submit{
+    width: 10%;
+
+}
+.iNpuT .submit:hover {
+    background-color: rgb(45, 185, 176);
+    border: 2px solid #fff;
+  }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, .input[type=submit] {
+    .FormContainer {
+      background-color: aqua;
       width: 100%;
       margin-top: 0;
     }
@@ -144,3 +155,23 @@ nav ul li a {
 footer{
     background-color: #fb839e;
 }
+/* blog */
+.grid-container3{
+    background-color: #fb839e;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 43px;
+    padding: 13px;
+}
+.grid-container3 > div{
+    border: 2px solid black;
+    padding: 15px;
+}
+.grid-container3 .grid-item7{
+    height: 10%;
+    width: 10%;
+    border-radius: 20px;
+
+
+}
+
