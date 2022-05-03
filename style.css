@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     list-style: none; /* To remove bullet */
-    text-decoration: none;
+    text-decoration: none; /* no line is drawn */
     box-sizing: border-box; /*padding and border are included in the width and height*/
 }
 
 body {
-    background-color: white;
+    background-color:  #e6dfdf;;
 }
 
 /*nav styling*/
@@ -18,13 +18,16 @@ nav {
     background-color: rgb(45, 185, 176);
     height: 40px;
 }
+.navMenu{
+    display: flex; /*sets the flexible length on flexible items*/
+}
 
 /* logo */
 .logO a {
     color: white;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: bold;
-    margin: 10px;
+    margin: 10px; /*setting margin 10px*/
     left: 0px;
 }
 
@@ -32,15 +35,11 @@ nav {
     color: #fb839e;
 }
 
-@media screen and (max-width: 900px) {
-    .logO {
-        background-color: blue;
-    }
-}
+
 
 /* navbar */
 nav ul {
-    display: flex;
+    display: flex; /*sets the flexible length on flexible items*/
     float: right;
     overflow: auto; /*better control of the layout*/
     margin-right: 20px;
@@ -48,22 +47,21 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 30px; /*setting margin 30px on left*/
 }
 
 nav ul li a {
-    text-decoration: none;
-    display: block;
-    /*makes the whole link area clickable */
-    color: white;
+    text-decoration: none; /* no line is drawn */
+    display: block; /*makes the whole link area clickable */
+    color: white; /**/
     width: 100%;
-    font-size: 23px;
+    font-size: 23px; /* setting font size 23px*/
 }
 
 .navMenu li {
     border: 2px solid transparent;
     border-bottom: 2px solid #fff;
-    margin-right: 0px;
+    margin-right: 0px; 
     padding-right: 30px;
     transition: border 0.8s ease;
 }
@@ -74,6 +72,48 @@ nav ul li a {
     border-right: 2px solid #fff;
     border-bottom: 2px solid transparent;
 }
+/* hamburger icon */
+.haam{
+    cursor: pointer;
+    font-size: 21px; /* setting font size 21px*/
+    display: none;
+}
+
+/* sidebar*/
+.sidebar{
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    display: none;
+    overflow: auto;
+    opacity: 0.7;
+    position: fixed;
+}
+.navDiv{
+    margin-top: -33px;
+}
+.sidebar a{
+    color: black;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active{
+    background-color: rgb(45, 185, 176);
+    color: white;
+}
+
+.sidebar a:hover:not(.active){
+    color: white;
+    background-color: rgb(45, 185, 176);
+}
+div.content {
+    height: 1000px;
+    padding: 1px 16px;
+    margin-left: 200px;
+}
+
 
 /*home section styling*/
 
@@ -94,13 +134,30 @@ nav ul li a {
 }
 .info{
     color: black;
-    font-size: 45px;
+    font-size: 45px;  /* setting font size 45px*/
+}
+/* image */
+.image {
+    width: 70%;
+    height: 50vh;
+    border-radius: 50%;
+}
+@media screen and (max-width: 802px) {
+    .image {
+        width: 31%;
+        height: 100vh;
+        border-radius: 50%;
+    }
+
 }
 
-.image {
-    width: 80%;
-    height: 55vh;
-    border-radius: 50%;
+/* footer */
+.inner-footer {
+    background-color: #fb839e;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-left: 500px; 
+    font-size: 50px; /* setting font size 50px*/
 }
 
 /* contact */
@@ -122,10 +179,11 @@ nav ul li a {
 
 
 .iNpuT input, .iNpuT textarea{
-    margin: 5px;
+    resize: none;
+    margin: 5px; /**/
     box-sizing: border-box;
     box-shadow: black;
-    font-size: 30px;
+    font-size: 30px; /* setting font size 30px*/
     height: 50%;
     width: 50%;
     border-radius: fit-content;
@@ -137,7 +195,7 @@ nav ul li a {
 .iNpuT .submit:hover {
     background-color: rgb(45, 185, 176);
     border: 2px solid #fff;
-  }
+}
 
 @media screen and (max-width: 600px) {
     .FormContainer {
@@ -157,7 +215,7 @@ footer{
 }
 /* blog */
 .grid-container3{
-    background-color: #fb839e;
+    background-color:  #e6dfdf;;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 43px;
