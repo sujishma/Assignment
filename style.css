@@ -1,74 +1,64 @@
 /* css for overall page */
+
+/* selects all elements */
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    /* To remove bullet */
-    text-decoration: none;
-    /* no line is drawn */
-    box-sizing: border-box;
-    /*padding and border are included in the width and height*/
+    list-style: none; /* To remove bullet */
+    text-decoration: none; /* no line is drawn */
+    box-sizing: border-box; /*padding and border are included in the width and height*/
 }
-
+/* body */
 body {
-    background-color: #e6dfdf;
+    background-color: #e6dfdf; /*setting body background-color*/
 }
 
 /*nav styling*/
 nav {
-    justify-content: center;
+    justify-content: center; /*distributes space between and around content items*/
     align-items: center;
-    background-color: rgb(45, 185, 176);
+    background-color: rgb(45, 185, 176); /*setting nav background-color*/
     height: 40px;
 }
 
 .navMenu {
-    display: flex;
-    /*sets the flexible length on flexible items*/
+    display: flex;/*sets the flexible length on flexible items*/
 }
 
 /* logo */
 .logO a {
-    color: white;
+    color: white;/*setting logo letter color*/
     font-size: 31px;
     font-weight: bold;
-    margin: 10px;
-    /*setting margin 10px*/
+    margin: 10px; /*setting margin 10px*/
     left: 0px;
 }
 
 .logO a span {
-    color: #fb839e;
+    color: #fb839e; /*setting logo span color*/
 }
 
 
 
 /* navbar */
 nav ul {
-    display: flex;
-    /*sets the flexible length on flexible items*/
-    float: right;
-    overflow: auto;
-    /*better control of the layout*/
+    display: flex;/*sets the flexible length on flexible items*/
+    float: right; /*element floats to the right */
+    overflow: auto;/*better control of the layout*/
     margin-right: 20px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 30px;
-    /*setting margin 30px on left*/
+    margin-left: 30px;/*setting margin 30px on left*/
 }
 
 nav ul li a {
-    text-decoration: none;
-    /* no line is drawn */
-    display: block;
-    /*makes the whole link area clickable */
-    color: white;
-    /**/
+    text-decoration: none; /* no line is drawn */
+    display: block;/*makes the whole link area clickable */
+    color: white;/*setting letter color white*/
     width: 100%;
-    font-size: 23px;
-    /* setting font size 23px*/
+    font-size: 23px;/* setting font size 23px*/
 }
 
 .navMenu li {
@@ -89,21 +79,20 @@ nav ul li a {
 /* hamburger icon */
 .haam {
     cursor: pointer;
-    font-size: 40px;
-    /* setting font size 21px*/
+    font-size: 40px; /* setting font size 21px*/
 }
 
 /* sidebar*/
 .sidebar {
     background-color: #2c3e50;
-    position: fixed;
+    position: fixed; /*stays in the same place even if the page is scrolled*/
     top: 40px;
     width: 30%;
     left: -35%;
     z-index: 1;
     height: 100%;
     opacity: 0.7;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); /*setting boxshadow color for side bar*/
     transition: left 0.7s ease-in-out;
 }
 
@@ -115,14 +104,14 @@ nav ul li a {
     cursor: pointer;
     font-weight: 800;
     color: white;
-    float: right;
+    float: right; /*element floats to the right */
     padding: 1rem;
 }
 
 .open {
-    position: relative;
+    position: relative; /*positioned relative to its normal position*/
     cursor: pointer;
-    color: black;
+    color: black; /*setting color*/
     font-size: 40px;
     top: 0px;
     display: none;
@@ -134,7 +123,7 @@ nav ul li a {
 }
 
 #check:checked~.content {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /*setting background-color*/
 }
 
 .navDiv {
@@ -142,20 +131,20 @@ nav ul li a {
 }
 
 .sidebar a {
-    color: white;
+    color: white; /*setting color*/
     display: block;
     padding: 16px;
     text-decoration: none;
 }
 
 .sidebar a.active {
-    background-color: rgb(45, 185, 176);
-    color: white;
+    background-color: rgb(45, 185, 176); /*setting background-color*/
+    color: white; /*setting letter color*/
 }
 
 .sidebar a:hover:not(.active) {
-    color: white;
-    background-color: rgb(45, 185, 176);
+    color: white; /*setting letter color*/
+    background-color: rgb(45, 185, 176); /*setting background-color*/
 }
 
 div.content {
@@ -163,12 +152,12 @@ div.content {
     padding: 1px 16px;
     margin-left: 200px;
 }
+/* media screen for responsive logo, ham and sidebar */
 
 @media screen and (max-width: 802px) {
     .logO {
         padding: 1px;
-        font-size: 10px;
-        /* setting font size 21px*/
+        font-size: 10px; /* setting font size 21px*/
     }
 
     .haam {
@@ -187,8 +176,8 @@ div.content {
         left: 0;
         top: 71px;
         transition: border 0.4s ease;
-        background: rgb(45, 185, 176);
-        position: fixed;
+        background: rgb(45, 185, 176); /*setting background-color*/
+        position: fixed; /*stays in the same place even if the page is scrolled*/
     }
 
     nav ul li {
@@ -199,16 +188,15 @@ div.content {
     }
 
     nav ul li a {
-        font-size: 10px;
-        /* setting font size 10px*/
+        font-size: 10px; /* setting font size 10px*/
     }
 
     .navMenu {
-        display: none;
+        display: none; /**/
     }
 
     .logoHam {
-        display: flex;
+        display: flex; /**/
     }
 
     .logoHam label {
@@ -223,14 +211,14 @@ div.content {
 
 .grid-container {
     display: grid;
-    grid-gap: 100px;
-    grid-template-columns: auto auto;
+    grid-gap: 100px;/*shorthand property for the row-gap and the column-gap properties*/
+    grid-template-columns: auto auto; /*specifies the size of the columns, and how many columns in a grid layout*/
     padding: 10px;
 }
 
 .grid-container .grid-item2 {
-    grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-start: 7; /*specifies where to start the grid item*/
+    grid-column-end: 10; /*Specifies where to end the grid item*/
 }
 
 .home {
@@ -240,9 +228,8 @@ div.content {
 }
 
 .info {
-    color: black;
-    font-size: 45px;
-    /* setting font size 45px*/
+    color: black; /*setting color*/
+    font-size: 45px; /* setting font size 45px*/
 }
 
 /* image */
@@ -252,59 +239,52 @@ div.content {
     border-radius: 50%;
 }
 
+
+/* footer */
+.innerfooter {
+    background-color: #fb839e; /*setting background-color*/
+}
+
+.con {
+    font-size: 25px; /* setting font size 20px*/
+
+}
+
+.allow {
+    font-size: 20px; /* setting font size 20px*/
+}
+
+.social-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px; /* setting font size 50px*/
+}
+/* media screen for responsive image and footer*/
 @media screen and (max-width: 802px) {
     .image {
         width: 31%;
         height: 100vh;
         border-radius: 50%;
     }
+    footer{
+        background-color: #fb839e; /*setting footer color*/
+        font-size: 20px;
+    }
 
 }
-
-/* footer */
-.innerfooter {
-    background-color: #fb839e;
-}
-
-.con {
-    font-size: 25px;
-    /* setting font size 20px*/
-
-}
-
-.allow {
-    font-size: 20px;
-    /* setting font size 20px*/
-}
-
-.social-links {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 50px;
-    /* setting font size 50px*/
-}
-
-/* contact */
+/* contact page styling */
 .headingContact {
     margin: 0;
     font-size: 40px;
     font-weight: normal;
-    color: black;
+    color: black; /*setting letter color*/
     line-height: 40px;
     margin-left: 480px;
 }
 
 .FormContainer {
-    background-color: #e6dfdf;
+    background-color: #e6dfdf; /*setting background-color*/
 
-}
-
-@media screen and (max-width: 600px) {
-    .FormContainer {
-        background-color: aqua;
-        width: 100%;
-        margin-top: 0;
-    }
 }
 
 .grid-container2 {
@@ -319,40 +299,47 @@ input[type="text"],
 select,
 textarea {
     resize: none;
-    border: 2px solid black;
-    margin-bottom: 19px;
-    /**/
+    border: 2px solid black; /*setting border color solid black*/
+    margin-bottom: 19px; /**/
     border-radius: 10px;
     padding: 11px;
     margin-top: 7px;
-    box-sizing: border-box;
-    /*padding and border are included in the width and height*/
-    box-shadow: black;
+    box-sizing: border-box; /*padding and border are included in the width and height*/
     width: 100%;
 }
 
 input[type="submit"] {
     cursor: pointer;
     border-radius: 6px;
-    border: 2px solid black;
+    border: 2px solid black; /*setting border color solid black*/
     padding: 12px 20px;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(45, 185, 176);
+    background-color: rgb(45, 185, 176); /*setting background color of hover when pressed*/
     border: 2px solid #fff;
 }
-
+/* map */
 .mAp {
-    position: relative;
+    position: relative; /*positioned relative to its normal position*/
     border: 10px;
     top: 310px;
     width: 450px;
     left: 270px;
 }
+/* media screen for responsive logo, ham and sidebar */
+@media screen and (max-width: 802px) {
+    .FormContainer {
+        background-color: aqua;
+        width: 100%;
+        margin-top: 0;
+    }
+    .mAp {
+        width: 100%;
+    }
+}
 
-
-/* blog */
+/* blog-styling */
 .grid-container3 {
     background-color: #e6dfdf;
     display: grid;
@@ -362,7 +349,7 @@ input[type="submit"]:hover {
 }
 
 .grid-container3>div {
-    border: 2px solid black;
+    border: 2px solid black; /*setting border color solid black*/
     padding: 15px;
 }
 
@@ -372,4 +359,47 @@ input[type="submit"]:hover {
     border-radius: 20px;
 
 
+}
+/* portfolio styling */
+.port{
+    margin: 5px;
+}
+.grid-container4{
+    background-color: #e6dfdf;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-column-gap: 20px;
+    grid-template-rows: 300px 300px ;
+    grid-row-gap: 10px;
+    
+
+}
+.grid-container4 > div {
+    border: 2px solid black; /*setting border color solid black*/
+}
+.suju{
+    width: 100%;
+    height: 100%;
+}
+.tik{
+    width: 100%;
+    height: 100%;
+
+}
+.ground{
+    width: 100%;
+    height: 100%;
+    
+}
+.fish{
+    width: 99%;
+    height: 100%;
+}
+.plant{
+    width: 100%;
+    height: 100%;
+}
+.tok{
+    width: 100%;
+    height: 100%;
 }
