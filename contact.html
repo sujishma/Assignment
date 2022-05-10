@@ -11,24 +11,34 @@
 </head>
 
 <body>
+    <input type="checkbox" id="check">
+
+
+    <aside class="sidebar">
+        <label for="check" class="close">X</label>
+        <a class="active" href="index.html">HOME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="blog.html">BLOG</a>
+        <a href="sitereport.html">SITE REPORT</a>
+    </aside>
+
     <nav>
         <!-- logo -->
-        <label class="logO"><a href="#">Sujis<span>hma</span></a></label>
+
         <div class="logoHam">
-            <label for="check" class="haam">
+            <label for="check" class="open">
                 <i class="fa fa-bars"></i>
+            </label>
+            <label class="logO">
+                <a href="#">Sujis<span>hma</span></a>
             </label>
         </div>
 
 
         <!-- navbar -->
-        <div class="sidebar">
-            <a class="active" href="index.html">HOME</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="blog.html">BLOG</a>
-            <a href="sitereport.html">SITE REPORT</a>
-        </div>
+
+
         <div class="navDiv">
             <ul class="navMenu">
                 <li><a href="index.html">HOME</a></li>
@@ -70,7 +80,8 @@
                     <textarea rows="6" cols="55" id="subject" name="subject"
                         placeholder="Enter Your Message Here"></textarea>
                     <br>
-                    <input type="submit" value="Send" class="submit">
+            
+                    <p class="submit"><a href="mailto:sujishmarai@gmail.com">Send</a></p>
 
                 </form>
             </div>
