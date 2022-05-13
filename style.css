@@ -319,7 +319,7 @@ textarea {
     width: 10%;
     border-radius: 50px;
     border: 2px solid black; /*setting border color solid black*/
-    padding: 12px 20px;
+    padding: 10px 5px 10px 15px;
 }
 
 .submit:hover {
@@ -330,20 +330,46 @@ textarea {
 .mAp {
     position: relative; /*positioned relative to its normal position*/
     border: 10px;
-    top: 310px;
-    width: 450px;
-    left: 270px;
+    top: 410px;
+    left: 10px;
+    padding-left: 350px;
 }
-/* media screen for responsive logo, ham and sidebar */
+/* media screen for responsive map and contact form*/
 @media screen and (max-width: 802px) {
-    .FormContainer {
-        background-color: aqua;
-        width: 100%;
+    .headingContact {
+        margin-left: 10px; 
+
+    }
+    
+    .grid-container2 {
+        display: grid;
+        grid-gap: 10px;/*shorthand property for the row-gap and the column-gap properties*/
+        grid-template-columns: auto; /*specifies the size of the columns, and how many columns in a grid layout*/
+        padding: 10px;
+    }
+    .grid-item3 {
+        width: 60%;
         margin-top: 0;
     }
-    .mAp {
-        width: 100%;
+    .submit {
+        padding: 5px;
+        cursor: pointer;
+        width: 20%;
+        border-radius: 50px;
+        border: 2px solid black; /*setting border color solid black*/
+    
     }
+    .submit:hover {
+        background-color: rgb(45, 185, 176); /*setting background color of hover when pressed*/
+        border: 2px solid #fff;
+    }
+    .mAp{
+        top: 100px;
+        left: 0px;
+        padding-left: 0px;
+
+    }
+    
 }
 
 /* blog-styling */
@@ -436,4 +462,28 @@ textarea {
     grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
+}
+@media screen and (max-width: 802px) {
+    .grid-container4{
+        background-color: #e6dfdf;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 5px;
+        
+        
+    
+    }
+    .grid-container4 .grid-item8{
+        width: 200px;
+    } 
+    .grid-container4 .grid-item10 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    
+    
+    
 }
