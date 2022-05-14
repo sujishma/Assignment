@@ -8,6 +8,7 @@
     text-decoration: none; /* no line is drawn */
     box-sizing: border-box; /*  and border are included in the width and height */
 }
+
 /* body */
 body {
     background-color: #e6dfdf; /* setting body background-color */
@@ -219,7 +220,7 @@ div.content {
     grid-column-end: 10; /*Specifies where to end the grid item*/
 }
 
-.home {
+.main {
     display: inline-flex;
     align-items: center;
     height: 700px; /* setting height 700px */
@@ -399,14 +400,6 @@ textarea {
 .text{
     font-size: 25px;
 }
-.rotat{
-    z-index: 1;
-    background-color: #1fc586;
-    transition: all 8s ease-in-out;
-}
-.rotat:hover{
-    transform: rotate(45deg);
-}
 /* media screen for responsive blog grid */
 @media screen and (max-width: 802px) {
     .grid-container3{
@@ -563,3 +556,30 @@ textarea {
 .rang{
     color: #fb839e;
 }
+
+  
+
+.photo{
+    height: 30%; /*setting height 30%*/
+    width: 50%; /*setting width 50%*/
+}
+.validat{
+    height: 40%; /*setting height 40%*/
+    width: 50%; /*setting width 50%*/
+}
+@media screen and (max-width: 802px) {
+    .report{
+        font-size: 20px; /* setting fontsize 20px */
+    }
+    .validat{
+        height: 100px; /*setting height 100px*/
+        width: 150px; /*setting width 150px*/
+    }
+    .photo{
+        height: 100px; /*setting height 100px*/
+        width: 150px; /*setting width 150px*/
+    }
+
+    
+}
+  
