@@ -2,34 +2,34 @@
 
 /* selects all elements */
 * {
-    margin: 0; /* giving margin 0 for all element*/
-    padding: 0; /*giving padding 0*/
+    margin: 0; /* giving margin 0 for all element */
+    padding: 0; /* giving padding 0 */
     list-style: none; /* To remove bullet */
     text-decoration: none; /* no line is drawn */
-    box-sizing: border-box; /*padding and border are included in the width and height*/
+    box-sizing: border-box; /*  and border are included in the width and height */
 }
 /* body */
 body {
-    background-color: #e6dfdf; /*setting body background-color*/
+    background-color: #e6dfdf; /* setting body background-color */
 }
 
 /*nav styling*/
 nav {
-    justify-content: center; /*distributes space between and around content items*/
-    align-items: center;
-    background-color: rgb(45, 185, 176); /*setting nav background-color*/
-    height: 40px;
+    justify-content: center; /* distributes space between and around content items */
+    align-items: center; 
+    background-color: rgb(45, 185, 176); /* setting nav background-color */
+    height: 40px; /* setting height 40px */
 }
 
 .navMenu {
-    display: flex;/*sets the flexible length on flexible items*/
+    display: flex; /*sets the flexible length on flexible items*/
 }
 
 /* logo */
 .logO a {
-    color: white;/*setting logo letter color*/
-    font-size: 31px;
-    font-weight: bold;
+    color: white; /*setting logo letter color*/
+    font-size: 31px; /* setting font size 31px*/
+    font-weight: bold; /* setting font size bold */
     margin: 10px; /*setting margin 10px*/
     left: 0px;
 }
@@ -45,12 +45,12 @@ nav ul {
     display: flex;/*sets the flexible length on flexible items*/
     float: right; /*element floats to the right */
     overflow: auto;/*better control of the layout*/
-    margin-right: 20px;
+    margin-right: 20px; /*setting margin 20px on right*/
 }
 
 nav li {
     display: inline-block;
-    margin-left: 30px;/*setting margin 30px on left*/
+    margin-left: 30px; /*setting margin 30px on left*/
 }
 
 nav ul li a {
@@ -63,7 +63,7 @@ nav ul li a {
 .navMenu li {
     border: 2px solid transparent;
     border-bottom: 2px solid #fff;
-    margin-right: 0px;
+    margin-right: 0px; /*setting margin 0px on right*/
     padding-right: 30px;
     transition: border 0.8s ease;
 }
@@ -85,18 +85,18 @@ nav ul li a {
 .sidebar {
     background-color: #2c3e50;
     position: fixed; /*stays in the same place even if the page is scrolled*/
-    top: 40px;
-    width: 30%;
+    top: 40px; /*setting space from top 40px*/
+    width: 30%; /*setting width 30px*/
     left: -35%;
     z-index: 1;
-    height: 100%;
+    height: 100%; /* setting height 100% fir sidebar */
     opacity: 0.7;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); /*setting boxshadow color for side bar*/
     transition: left 0.7s ease-in-out;
 }
 
 #check {
-    display: none;
+    display: none; /*setting display none*/
 }
 
 .close {
@@ -111,7 +111,7 @@ nav ul li a {
     position: relative; /*positioned relative to its normal position*/
     cursor: pointer;
     color: black; /*setting color*/
-    font-size: 40px;
+    font-size: 40px; /* setting font size 40px*/
     top: 0px;
     display: none;
 }
@@ -126,12 +126,12 @@ nav ul li a {
 }
 
 .navDiv {
-    margin-top: -33px;
+    margin-top: -33px; /*setting margin -33px on top*/
 }
 
 .sidebar a {
     color: white; /*setting color*/
-    display: block;
+    display: block; /*makes the whole link area clickable */
     padding: 16px;
 }
 
@@ -146,9 +146,9 @@ nav ul li a {
 }
 
 div.content {
-    height: 1000px;
+    height: 1000px; /* setting height 1000px */
     padding: 1px 16px;
-    margin-left: 200px;
+    margin-left: 200px; /*setting margin 200px on left*/
 }
 /* media screen for responsive logo, ham and sidebar */
 
@@ -159,7 +159,7 @@ div.content {
     }
 
     .haam {
-        display: block;
+        display: block; /*setting display block for haam*/
         cursor: pointer;
     }
 
@@ -169,7 +169,7 @@ div.content {
 
     nav ul {
         text-align: center;
-        height: 100vh;
+        height: 100vh; /* setting height 100vh */
         width: 100%;
         left: 0;
         top: 71px;
@@ -179,8 +179,8 @@ div.content {
     }
 
     nav ul li {
-        display: block;
-        line-height: 20px;
+        display: block; /*setting display block for nav*/
+        line-height: 20px; /* setting line-height 20px */
         margin: 30px 0;
 
     }
@@ -190,16 +190,16 @@ div.content {
     }
 
     .navMenu {
-        display: none; /**/
+        display: none; /* setting display none*/
     }
 
     .logoHam {
-        display: flex; /**/
+        display: flex; /* settinf display flex for logoHam*/
     }
 
     .logoHam label {
-        margin-right: 50px;
-    }
+        margin-right: 50px; /*setting margin-right 50px*/
+    } 
 
 
 }
@@ -208,10 +208,10 @@ div.content {
 /*home section styling*/
 
 .grid-container {
-    display: grid;
+    display: grid; /*setting display grid for grid-container*/
     grid-gap: 100px;/*shorthand property for the row-gap and the column-gap properties*/
     grid-template-columns: auto auto; /*specifies the size of the columns, and how many columns in a grid layout*/
-    padding: 10px;
+    padding: 10px; /*setting padding 10px for top,right,bottom,left*/
 }
 
 .grid-container .grid-item2 {
@@ -222,7 +222,7 @@ div.content {
 .home {
     display: inline-flex;
     align-items: center;
-    height: 700px;
+    height: 700px; /* setting height 700px */
 }
 
 .info {
@@ -233,7 +233,7 @@ div.content {
 /* image */
 .image {
     width: 70%;
-    height: 50vh;
+    height: 50vh; /* setting height 50vh */
     border-radius: 50%;
 }
 
@@ -262,15 +262,15 @@ div.content {
 @media screen and (max-width: 802px) {
     .image {
         width: 100%;
-        height: auto;
+        height: auto; /* setting height auto for image*/
         border-radius: 50%;
     }
     footer{
         background-color: #fb839e; /*setting footer color*/
-        font-size: 20px;
+        font-size: 20px; /* setting font size 20px*/
     }
     .grid-container {
-        display: grid;
+        display: grid; /*setting display grid for grid-container*/
         grid-gap: 10px;/*shorthand property for the row-gap and the column-gap properties*/
         grid-template-columns: auto; /*specifies the size of the columns, and how many columns in a grid layout*/
         padding: 10px;
@@ -280,12 +280,12 @@ div.content {
 }
 /* contact page styling */
 .headingContact {
-    margin: 0;
-    font-size: 40px;
-    font-weight: normal;
+    margin: 0; /*setting margin 0px*/
+    font-size: 40px; /* setting font size 40px*/
+    font-weight: normal; /* setting font-weight normal */
     color: black; /*setting letter color*/
-    line-height: 40px;
-    margin-left: 480px;
+    line-height: 40px; /* setting lineheight 40px */
+    margin-left: 480px; /*setting margin 480px on left*/
 }
 
 .FormContainer {
@@ -294,7 +294,7 @@ div.content {
 }
 
 .grid-container2 {
-    display: grid;
+    display: grid; /*setting display grid for grid-container2*/
     grid-gap: 10px;
     grid-template-columns: auto auto;
     padding: 10px;
@@ -309,7 +309,7 @@ textarea {
     margin-bottom: 19px; /**/
     border-radius: 10px;
     padding: 11px;
-    margin-top: 7px;
+    margin-top: 7px; /*setting margin 7px on top*/
     box-sizing: border-box; /*padding and border are included in the width and height*/
     width: 100%;
 }
@@ -337,19 +337,19 @@ textarea {
 /* media screen for responsive map and contact form*/
 @media screen and (max-width: 802px) {
     .headingContact {
-        margin-left: 10px; 
+        margin-left: 10px;  /*setting margin 10px on left*/
 
     }
     
     .grid-container2 {
-        display: grid;
+        display: grid; /*setting display grid for grid-container2*/
         grid-gap: 10px;/*shorthand property for the row-gap and the column-gap properties*/
         grid-template-columns: auto; /*specifies the size of the columns, and how many columns in a grid layout*/
         padding: 10px;
     }
     .grid-item3 {
         width: 60%;
-        margin-top: 0;
+        margin-top: 0; /*setting margin 0 on top*/
     }
     .submit {
         padding: 5px;
@@ -374,116 +374,192 @@ textarea {
 
 /* blog-styling */
 .grid-container3 {
+    margin: 20px;
     background-color: #e6dfdf;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 43px;
-    padding: 13px;
+    display: grid; /*setting display grid for grid-container3*/
+    grid-template-columns: 550px 500px 330px;
+    grid-column-gap: 30px;  
 }
+.grid-container3 > div{
+    border: 2px solid black;
 
-.grid-container3>div {
-    border: 2px solid black; /*setting border color solid black*/
-    padding: 15px;
 }
-
-.grid-container3 .grid-item7 {
-    height: 10%;
-    width: 10%;
-    border-radius: 20px;
-
-
+.design{
+    height: 90%;
+    width: 100%;
+}
+.design2{
+    height: 90%;
+    width: 100%;
+}
+.design3{
+    height: 90%;
+    width: 100%
+}
+.text{
+    font-size: 25px;
+}
+.rotat{
+    z-index: 1;
+    background-color: #1fc586;
+    transition: all 8s ease-in-out;
+}
+.rotat:hover{
+    transform: rotate(45deg);
+}
+/* media screen for responsive blog grid */
+@media screen and (max-width: 802px) {
+    .grid-container3{
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .grid-container3 .grid-item5{
+        grid-row: 1 / 2;
+    }
+    .grid-container3 .grid-item6{
+        grid-row: 3 / 4;
+    }
+    .grid-container3 .grid-item7{
+        grid-row: 5 / 6;
+    }
+    .design{
+        height: 70%;
+        width: 100%;
+    }
+    .design2{
+        height: 70%;
+        width: 100%;
+    }
+    .design3{
+        height: 90%;
+        width: 100%
+    }
+    .text{
+        font-size: 15px;
+    }
 }
 /* portfolio styling */
 .port{
-    margin: 20px;
+    margin: 5px; /* setting margin 5px */
 }
+.pic1{
+    width: 100%; /*setting width 100% of pic1*/
+    height: 100%; /*setting height 100% of pic1*/
+
+}
+.pic2{
+    width: 100%; /*setting width 100% of pic2*/
+    height: 100vh; /*setting height 100vh of pic2*/
+
+}
+.pic3{
+    width: 50vh;/*setting width 50vh of pic3*/
+    height: 100%; /*setting height 100% of pic3*/
+
+}
+.pic4{
+    width: 50vh; /*setting width 50vh of pic4*/
+    height: 100vh; /*setting height 100vh of pic4*/
+
+}
+.pic5{
+    width: 100%; /*setting width 100% of pic5*/
+    height: 100vh; /*setting height 100vh of pic5*/
+}
+
 .grid-container4{
-    background-color: #e6dfdf;
-    display: grid;
-    grid-template-columns: 100px 200px 200px 200px;
-    grid-column-gap: 30px;
-    grid-template-rows: 600px 300px ;
-    grid-row-gap: 20px;
+    background-color: #e6dfdf; /*setting background color for grid-container4*/
+    display: grid; /*setting display grid*/
+    grid-template-columns:  auto auto auto ; /*setting columns*/
+    grid-gap: 2px; /* setting grid gap for columns and rows*/
+    grid-template-rows: auto auto auto auto; /* setting grid rows*/
+    
     
 
 }
 .grid-container4 > div {
-    border: 2px solid black; /*setting border color solid black*/
-}
-.suju{
-    width: 100%;
-    height: 100%;
-}
-.tik{
-    width: 100%;
-    height: 100%;
-
-}
-.ground{
-    width: 100%;
-    height: 100%;
+    border: 2px solid black; /*setting border solid black*/
     
-}
-.fish{
-    width: 100%;
-    height: 100%;
-}
-.plant{
-    width: 100%;
-    height: 100%;
-}
-.tok{
-    width: 100%;
-    height: 100%;
 }
 .grid-container4 .grid-item8 {
-    grid-column-start: 1; /*specifies where to start the grid item*/
-    grid-column-end: 3; /*Specifies where to end the grid item*/
+    grid-row-start: 1; /*setting row start 1 for item8*/
+    grid-row-end: 3; /*setting row end 3 for item8*/
 }
 .grid-container4 .grid-item9 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2 / 4; /*columnstart 2 end 4*/
+    grid-row: 1 / 2; /*row start 1 end 2*/
 }
 .grid-container4 .grid-item10 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-row: 2 / 5; /*row start 2 end 5*/
+    grid-column: 3 / 4; /*columnstart 3 end 4*/
+    
 }
 .grid-container4 .grid-item11 {
-    margin-top: 30px;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column: 2 / 3; /*columnstart 2 end 3*/
+    grid-row: 2 / 3; /*row start 2 end 3*/
 }
 .grid-container4 .grid-item12 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-row: 4 / 5; /*row start 4 end 5*/
+    grid-column: 1 / 3; /*columnstart 1 end 3*/
 }
+
+/* media screen for responsive grid image */
 @media screen and (max-width: 802px) {
-    .grid-container4{
-        background-color: #e6dfdf;
-        display: grid;
-        grid-template-columns: auto;
-        grid-column-gap: 5px;
-        
-        
+
+    .pic1{
+        width: 100%; /*setting width 100%*/
+        height: 100%; /* setting height 100% */
     
     }
-    .grid-container4 .grid-item8{
-        width: 200px;
-    } 
+    .pic2{
+        width: 100%; /*setting width 100%*/
+        height: 100vh; /* setting height 100vh */
+    
+    }
+    .pic3{
+        width: 100%; /*setting width 100%*/
+        height: 100%; /* setting height 100% */
+    
+    }
+    .pic4{
+        width: 100%; /*setting width 100%*/
+        height: 100vh; /* setting height 100vh */
+    
+    }
+    .pic5{
+        width: 100%; /*setting width 100%*/
+        height: 100vh; /* setting height 100vh */
+    }
+    .grid-container4 .grid-item8 {
+        grid-column: 1 / 3; /*columnstart 1 end 3 for item8*/
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .grid-container4 .grid-item9 {
+        
+        grid-column: 1 / 3; /*columnstart 1 end 3 for item9*/
+        grid-row: 2 / 3; /*row start 2 end 3 for item9*/
+    }
     .grid-container4 .grid-item10 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 5;
+        grid-row: 3 / 4;  /*row start 3 end 4 for item10*/
+        grid-column: 1 / 3; /*columnstart 1 end 3 for item10*/
+        
+    }  
+    .grid-container4 .grid-item11 {
+        grid-column: 1 / 3; /*columnstart 1 end 3 for item11*/
+        grid-row: 4 / 5;  /*row start 4 end 5 for item11*/
     }
-    
-    
-    
-    
+    .grid-container4 .grid-item12 {
+        grid-row: 5 / 6; /*row start 5 end 6 for item12*/
+        grid-column: 1 / 3; /*columnstart 1 end 3 for item12*/
+    }  
+}
+/* sitereport */
+.report{
+    margin: 20px; /*setting margin 20px*/
+    font-size: 25px; /* setting fontsize 25px */
+}
+.rang{
+    color: #fb839e;
 }
